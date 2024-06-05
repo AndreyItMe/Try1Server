@@ -1,0 +1,21 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Try1Server.Massage.TextMassage, Try1Server]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "Try1Server.Massage.TextMassage, Try1Server",
+      "text": "Hi",
+      "time": "2.00:00:01",
+      "contactName": "Andrey",
+      "Time": "00:00:00",
+      "Contact": null
+    },
+    {
+      "$type": "Try1Server.Massage.TextMassage, Try1Server",
+      "text": "Hello",
+      "time": "2.00:00:01",
+      "contactName": "Ivan",
+      "Time": "00:00:00",
+      "Contact": null
+    }
+  ]
+}helloWiz

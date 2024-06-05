@@ -1,0 +1,8 @@
+{
+  "$type": "Try1Server.Massage.TextMassage, Try1Server",
+  "text": "Hi",
+  "time": "2.00:00:01",
+  "contactName": "Andrey",
+  "Time": "00:00:00",
+  "Contact": null
+}
