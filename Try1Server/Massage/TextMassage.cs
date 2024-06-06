@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -21,25 +22,22 @@ namespace Try1Server.Massage
 
         [Newtonsoft.Json.JsonProperty("receiverName")] //кому письмо
         public string ReceiverName { get; set; }
+        public TextMassage() { } //лучше метод fromString вставить в конструктор класса
 
-        /*
-                [Newtonsoft.Json.JsonProperty("time")]
-                public new TimeSpan Time { get; set; } //https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-8.0&redirectedfrom=MSDN
-        */
-        /*
-                [Newtonsoft.Json.JsonProperty("contact")]
-                public Contact Contact { get; set; }
-        */
-        /*
-                public int text { get; set; }
-                public string contact { get; set; }
-        */
-        /*
-                public TextMassage(TimeSpan LastTime, Contact LastContact) : base(LastTime, LastContact) //point - центр круга
-                {
+        public void fromString(string json)
+        {
+            var settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Formatting.Indented
 
-                }
-        */
-        public TextMassage() { }
+            };
+            TextMassage textMassage = Newtonsoft.Json.JsonConvert.DeserializeObject<TextMassage>(json);//, settings);
+            this.ReceiverName = textMassage.ReceiverName;
+            this.SenderName = textMassage.SenderName;
+            this.Text = textMassage.Text;
+            this.Time = textMassage.Time;
+            this.Contact = textMassage.Contact; 
+        }
     }
 }

@@ -3,43 +3,31 @@
   "$values": [
     {
       "$type": "Try1Server.Massage.TextMassage, Try1Server",
-      "text": "Hi",
-      "senderName": null,
-      "receiverName": null,
-      "Time": "00:00:00",
-      "Contact": null
-    },
-    {
-      "$type": "Try1Server.Massage.TextMassage, Try1Server",
-      "text": "Hello",
-      "senderName": null,
-      "receiverName": null,
-      "Time": "00:00:00",
-      "Contact": null
-    },
-    {
-      "$type": "Try1Server.Massage.TextMassage, Try1Server",
       "text": "helloWiz",
       "senderName": "andrey",
       "receiverName": "anton",
-      "Time": "21:54:36.8811946",
-      "Contact": null
+      "Time": "21:54:36.8811946"
     },
     {
       "$type": "Try1Server.Massage.TextMassage, Try1Server",
       "text": "Hello2",
       "senderName": "andrey",
       "receiverName": "anton",
-      "Time": "22:02:37.2023196",
-      "Contact": null
+      "Time": "22:02:37.2023196"
     },
     {
       "$type": "Try1Server.Massage.TextMassage, Try1Server",
       "text": "Hello2",
       "senderName": "andrey",
       "receiverName": "anton",
-      "Time": "22:05:00.7337273",
-      "Contact": null
-    }
+      "Time": "22:05:00.7337273"
+    },
+    {
+      "$type": "Try1Server.Massage.TextMassage, Try1Server",
+      "text": "helloWizK",
+      "senderName": "",
+      "receiverName": "anton",
+      "Time": "22:55:00.9225328"
+    },
   ]
 }
